@@ -158,7 +158,7 @@ function request(self, options, callback) {
 
             // Ensure it is complete and valid JSON
             try {
-                dataStr = dataStr.split('\n').shift();
+                dataStr = dataStr.split('\n').pop();
                 data = JSON.parse(dataStr);
             }
             catch (e) {
